@@ -6,10 +6,8 @@ export interface ExternalProps {
     role?: string
 };
 
-export interface AsyncProps {
+export interface AsyncProps extends  ExternalProps {
     children?: ReactElement | ReactElement [] | string | boolean | null | undefined;
-    caseNumber?: string;
-    role?: string
 }
 
 export interface TimeMessageProps {

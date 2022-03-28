@@ -7,15 +7,13 @@ import { ExternalProps } from '../../../interfaces'
 import '../../../styles/index.scss';
 
 export const Chat = ({ caseNumber, role = 'user'}: ExternalProps) => {
-	 
-	const { sync } = useParams()
-	
+
 	return (
 		<ChatAsync caseNumber={caseNumber} role={role}>
 			<div className="card">
 				<div className="container_header">
 					<div className="container_title_video_call">	
-						<p style={{ textAlign:'left' }}> Chat Asíncrono :).. </p>
+						<p style={{ textAlign:'left' }}> Chat Asíncrono :) </p>
 					</div>
 				</div>
 				<div>
