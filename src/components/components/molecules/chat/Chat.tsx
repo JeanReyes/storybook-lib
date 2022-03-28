@@ -6,7 +6,7 @@ import { ChatMessages } from './chatAsync/ChatMessages'
 import { ExternalProps } from '../../../interfaces'
 import '../../../styles/index.scss';
 
-export const Chat = ({ caseNumber, role }: ExternalProps) => {
+export const Chat = ({ caseNumber, role = 'user'}: ExternalProps) => {
 	 
 	const { sync } = useParams()
 	

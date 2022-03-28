@@ -3,6 +3,8 @@ import React, { useContext } from 'react';
 import { Attachment, Message as MessageInterface} from '../../../../interfaces';
 import { chatContext } from '../../../../tenants/chatContext'
 import { DateChat } from '../../../../utils/date';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFile, faDownload } from '@fortawesome/free-solid-svg-icons'
 
 
 export const Message = ({ msg }: {msg: MessageInterface} ) => {
@@ -41,9 +43,11 @@ export const Message = ({ msg }: {msg: MessageInterface} ) => {
 					className="container_file"
 					key={index} >
 					<div className="container_download">
-						<i className="fa-solid fa-file"></i>
+						{/* <i className="fa-solid fa-file"></i> */}
+						<FontAwesomeIcon icon={faFile}/>
 						<span>{nameFile(file.name)}</span>
-						<i className="fa-solid fa-download" style={{float: 'right', cursor:'pointer'}} onClick={ ()=> download(file) }></i>
+						<FontAwesomeIcon icon={faDownload} style={{float: 'right', cursor:'pointer'}} onClick={ ()=> download(file) }/>
+						{/* <i className="fa-solid fa-download" style={{float: 'right', cursor:'pointer'}} onClick={ ()=> download(file) }></i> */}
 					</div>
 				</div>))
 			}

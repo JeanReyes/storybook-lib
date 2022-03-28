@@ -15,5 +15,6 @@ ChatAsyncUser.args = {
 
 export const ChatAsyncAgent = Template.bind({})
 ChatAsyncAgent.args = {
-    caseNumber: '00022542'
+    caseNumber: '00022542',
+    role:'agent'
 }

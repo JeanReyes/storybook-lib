@@ -4,6 +4,8 @@ import { usePost } from '../../../../hook/axios/Post';
 import { ChatFormFile } from './ChatFormFile';
 import { ChatUploadFile } from './ChatUploadFile';
 import { Message } from '../../../../interfaces';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 export const ChatForm = () => {
     const { URL, handleMessage, role } = useContext(chatContext);
@@ -97,7 +99,7 @@ export const ChatForm = () => {
                             onKeyPress= { enterSubmit }
                             style={{height: heightTextArea, maxHeight:'132px'}}
                         />
-                        <button className="btn btn-outline-secondary"><i className="fa-solid fa-paper-plane"></i></button>
+                        <button className="btn btn-outline-secondary"><FontAwesomeIcon icon={faPaperPlane}/></button>
                     </div>
                 </div>
                 <ChatUploadFile />  

@@ -1,5 +1,6 @@
 @import "./base/settings";
 @import "../components/molecules/chat/chatAsync/chat.module";
+@import "~bootstrap/scss/bootstrap";
 
 .body {
   font-family: Lato, sans-serif;
