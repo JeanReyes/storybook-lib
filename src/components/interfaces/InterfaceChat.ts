@@ -2,6 +2,9 @@ import { ReactElement } from 'react';
 
 // PROPS
 export interface ExternalProps {
+    /**
+     * Corresponde al numero del caso
+     */
     caseNumber?: string;
     role?: string // user | agent
 };
