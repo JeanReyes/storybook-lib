@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import './OrdersStyle.css'
+import './OrdersStyle.scss'
 import { getOrders } from '../../../services/my-orders/MyOrdersService';
 import { IOrdersDataResponse } from '../../../services/my-orders/IOrdersDataResponse';
 import { OrdersCard } from './orders-list/OrdersList';
