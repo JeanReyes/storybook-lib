@@ -36,6 +36,7 @@
     "bootstrap": "^5.1.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
     "react-scripts": "^5.0.0",
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4"
@@ -47,7 +48,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "clean": "rimraf dist/",
-    "copy-files": "copyfiles -u 1 src/**/*.scss dist/"
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/"
   },
   "eslintConfig": {
     "extends": [
