@@ -24,3 +24,5 @@ export const Chat = ({ caseNumber, role = 'user'}: ExternalProps) => {
 		</ChatAsync>
 	)
 }
+
+export default Chat;
