@@ -1,9 +1,2 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-ReactDOM.render(
-  <React.StrictMode>
-
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export { Chat } from '../src/components/components/molecules/chat/Chat';
+export { Orders } from '../src/components/components/molecules/orders/Orders'
