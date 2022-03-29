@@ -3,7 +3,7 @@ import { ReactElement } from 'react';
 // PROPS
 export interface ExternalProps {
     caseNumber?: string;
-    role?: string
+    role?: string // user | agent
 };
 
 export interface AsyncProps extends  ExternalProps {
