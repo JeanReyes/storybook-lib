@@ -6,7 +6,14 @@ export interface ExternalProps {
      * Corresponde al numero del caso
      */
     caseNumber?: string;
-    role?: string // user | agent
+    /**
+     * 
+     */
+    role?: string ;// user | agent
+    /**
+     * puede ser Falabella, Sodimac, Tottus, Linio
+     */
+    corporation?: string
 };
 
 export interface AsyncProps extends  ExternalProps {

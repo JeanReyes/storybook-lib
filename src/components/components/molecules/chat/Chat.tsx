@@ -13,7 +13,7 @@ export const Chat = ({ caseNumber, role = 'user'}: ExternalProps) => {
 			<div className="card">
 				<div className="container_header">
 					<div className="container_title_video_call">	
-						<p style={{ textAlign:'left' }}> Chat Asíncrono :) </p>
+						<p style={{ textAlign:'left' }}> Chat Asíncrono :) ;) </p>
 					</div>
 				</div>
 				<div>
