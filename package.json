@@ -48,7 +48,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "clean": "rimraf dist/",
-    "copy-files": "copyfiles -u 1 src/**/*.css dist/"
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/ && copyfiles -u 1 src/**/*.scss dist/"
   },
   "eslintConfig": {
     "extends": [
