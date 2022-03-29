@@ -97,5 +97,13 @@
     "semantic-release": "^19.0.2",
     "storybook-addon-sass-postcss": "^0.1.0",
     "webpack": "^5.70.0"
-  }
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ]
 }
