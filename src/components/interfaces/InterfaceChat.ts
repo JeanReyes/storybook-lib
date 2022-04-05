@@ -9,11 +9,11 @@ export interface ExternalProps {
     /**
      * 
      */
-    role?: string ;// user | agent
+    role?: 'user' | 'agent'
     /**
      * puede ser Falabella, Sodimac, Tottus, Linio
      */
-    corporation?: string
+    corporation?: 'Falabella' | 'Sodimac' | 'Tottus' | 'Linio'
 };
 
 export interface AsyncProps extends  ExternalProps {

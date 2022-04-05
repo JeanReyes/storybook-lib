@@ -32,17 +32,15 @@ export const ChatForm = () => {
 
     const handleFile = (file: FileList): void => { // se ejecuta cada vez que se agrega un file
         const { attachments } = message;
+        let array = [ ...attachments!, ...file] as File [];
 
-        
-        // let array: File[] | FileList = [ ...attachments as File[], ...file]
-        // console.log(array);
-        
         if (attachments) {
-            // setMessage({
-            //     ...message,
-            //     attachments: array   
-            // });
+            setMessage({
+                ...message,
+                attachments: array   
+            });
         }
+            
     };
 
     const handleSubmit = (e?: React.FormEvent<HTMLFormElement>) => { 

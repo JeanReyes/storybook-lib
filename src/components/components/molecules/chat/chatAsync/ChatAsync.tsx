@@ -8,8 +8,8 @@ export const ChatAsync = ({ children, caseNumber, role }: AsyncProps) => {
     
     const { number_case } = useParams();
     caseNumber = caseNumber ? caseNumber : number_case;
-    const URL = `https://88c8-190-162-94-147.ngrok.io/v1/facl/chats/${caseNumber}/messages`;
-    // const URL = `http://localhost:8000/v1/facl/chats/${caseNumber}/messages`;
+    // const URL = `https://88c8-190-162-94-147.ngrok.io/v1/facl/chats/${caseNumber}/messages`;
+    const URL = `http://localhost:8000/v1/facl/chats/${caseNumber}/messages`;
     const [ msg, setMsg ] = useState({} as Message);
     const { data, loading, error , getAll } = useGet(URL);
 

@@ -3,8 +3,6 @@ import { formContext } from '../../../../tenants/chatContext';
 
 export const ChatUploadFile = () => {
 const { message, setMessage } = useContext(formContext);
-console.log(" message.attachments",  message.attachments);
-
 
 const removeFile = (index: number) => {
 	let array = message.attachments;

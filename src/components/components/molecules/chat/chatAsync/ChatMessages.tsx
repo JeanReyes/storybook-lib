@@ -13,12 +13,11 @@ export const ChatMessages = () => {
 
 	useEffect(() => {
 		if (data && data.length > 0) {
-			console.log(`Número de mensajes -> ${qtyMsgs}`);
 			if (scrollContainer.current !== null) {
 				scrollContainer.current.scrollTop = scrollContainer.current.scrollHeight;
 			}
 		}
-	}, [qtyMsgs, data]);
+	}, [qtyMsgs]);
 
 
 	useEffect(() => {

@@ -1,5 +1,4 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
 import { ChatAsync } from './chatAsync/ChatAsync'
 import { ChatForm } from './chatAsync/ChatForm'
 import { ChatMessages } from './chatAsync/ChatMessages'
@@ -9,11 +8,11 @@ import '../../../styles/index.scss';
 export const Chat = ({ caseNumber, role = 'user'}: ExternalProps) => {
 
 	return (
-		<ChatAsync caseNumber={caseNumber} role={role}>
+		<ChatAsync caseNumber={ caseNumber } role={ role }>
 			<div className="card">
 				<div className="container_header">
 					<div className="container_title_video_call">	
-						<p style={{ textAlign:'left' }}> Chat Asíncrono :) ;) </p>
+						<p style={{ textAlign:'left' }}> Chat Asíncrono </p>
 					</div>
 				</div>
 				<div>
