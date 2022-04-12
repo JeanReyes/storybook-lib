@@ -1,11 +1,11 @@
-// import ReactDOM from 'react-dom';
-// import { App } from './App'
+import ReactDOM from 'react-dom';
+import { App } from './App'
 
 
-// ReactDOM.render(
-//     <App/>,
-//     document.getElementById('root')
-// );
+ReactDOM.render(
+    <App/>,
+    document.getElementById('root')
+);
     
 export { App } from './App';
 export { Chat } from './components/components/molecules/chat/Chat';

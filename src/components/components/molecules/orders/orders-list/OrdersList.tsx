@@ -1,5 +1,5 @@
 import React,{ FC, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { getDeliveryMethod, getDeliveryStatus } from "../../../../constants/deliveryMethod";
 import { getCaseByOrder } from "../../../../services/my-case/CasesService";
 import { IOrderDataResponse, OrderResponse } from "../../../../services/my-orders/IOrderDataResponse";
