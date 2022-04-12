@@ -4,8 +4,8 @@ import { usePost } from '../../../../hook/axios/Post';
 import { ChatFormFile } from './ChatFormFile';
 import { ChatUploadFile } from './ChatUploadFile';
 import { Message } from '../../../../interfaces';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 export const ChatForm = () => {
     const { URL, handleMessage, role } = useContext(chatContext);
@@ -22,7 +22,7 @@ export const ChatForm = () => {
     const [ heightTextArea, setheightTextArea ] = useState(36);
     const refTextArea = useRef<HTMLTextAreaElement>(null);
 
-    const handleInput = ({target}: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const handleInput = ({ target }: React.ChangeEvent<HTMLTextAreaElement>) => {
         setheightTextArea(target.scrollHeight);
         setMessage({
             ...message,
@@ -39,13 +39,12 @@ export const ChatForm = () => {
                 ...message,
                 attachments: array   
             });
-        }
-            
+        }       
     };
 
     const handleSubmit = (e?: React.FormEvent<HTMLFormElement>) => { 
 
-        if (e) e.preventDefault();
+        e!.preventDefault();
         
         if (message.message.length > 0 && (message.attachments !== undefined && message.attachments.length > 0)) {
             postFile(message)

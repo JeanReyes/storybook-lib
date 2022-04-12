@@ -13,16 +13,19 @@ export const CasesChat = () => {
     const [orderNumber, setOrderNumber] = useState('');
     const [caseData, setCaseData] = useState<ICaseDataResponse>();
     const [orderData, setOrderData] = useState<IOrderDataResponseDeliveryOrders>();
+    const [loading, setLoading] = useState(false);
 
 
     async function loadDash() {
         if (orderNumber != '') {
+
             const response = await getDashboard(orderNumber);
             if (response?.order) {
                 formatSellerOrder(response.order.deliveryOrders[0]);
             }
             setCaseData(response?.case);
             setOrderData(response?.order.deliveryOrders[0]);
+            setLoading(true);
         }
     }
 
@@ -34,6 +37,10 @@ export const CasesChat = () => {
             loadDash();
         }
     }, [orderNumber]);
+
+    if (!loading) {
+        return  <p>...Loading</p>
+    };
 
     return (
         <div className="Cases-chat">

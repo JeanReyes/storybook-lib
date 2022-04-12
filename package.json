@@ -99,6 +99,7 @@
     "sass": "^1.49.9",
     "semantic-release": "^19.0.2",
     "storybook-addon-sass-postcss": "^0.1.0",
+    "storybook-react-router": "^1.0.8",
     "webpack": "^5.70.0"
   },
   "plugins": [

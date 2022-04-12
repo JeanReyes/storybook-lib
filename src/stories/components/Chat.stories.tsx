@@ -3,7 +3,8 @@ import { Chat } from "../../components/components/molecules/chat/Chat";
 
 export default {
     title: 'UI/Chat',
-    component: Chat
+    component: Chat,
+    argTypes: { onClick: { action: 'clicked' } }
 } as ComponentMeta<typeof Chat>
 
 const Template: ComponentStory<typeof Chat> = (args) => <Chat {...args} />

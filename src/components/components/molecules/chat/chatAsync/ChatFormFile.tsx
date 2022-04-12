@@ -1,6 +1,6 @@
 import React,{ useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperclip } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
 
 export const ChatFormFile = ({ handleFile }: { handleFile: ( file: FileList ) => void }) => {
     const file = useRef({} as HTMLInputElement);

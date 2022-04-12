@@ -3,8 +3,8 @@ import { saveAs } from 'file-saver';
 import { Attachment, Message as MessageInterface} from '../../../../interfaces';
 import { chatContext } from '../../../../tenants/chatContext'
 import { DateChat } from '../../../../utils/date';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFile, faDownload } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFile, faDownload } from '@fortawesome/free-solid-svg-icons';
 
 
 export const Message = ({ msg }: {msg: MessageInterface} ) => {

@@ -13,7 +13,7 @@ export interface ExternalProps {
     /**
      * puede ser Falabella, Sodimac, Tottus, Linio
      */
-    corporation?: 'Falabella' | 'Sodimac' | 'Tottus' | 'Linio'
+    seller?: 'Falabella' | 'Sodimac' | 'Tottus' | 'Linio'
 };
 
 export interface AsyncProps extends  ExternalProps {
